@@ -1,0 +1,15 @@
+<article>
+    <a href="#" class="image"><img src="{{ image }}" alt="" /></a>
+    <div class="inner">
+        <h4>
+            {{ name }}
+        </h4>
+        <p>
+            {{ title }} <br/>
+            <b>Publications:</b>
+            {% for pub_link, pub_title in pub_list %}
+            <a href="{{ pub_link }}">{{ pub_title }}</a>,
+            {% endfor %}
+        </p>
+    </div>
+</article>

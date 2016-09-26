@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alex Wallar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="shortcut icon" href="/favicon.ico"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+        <section id="header">
+            <header>
+                <span class="image avatar"><img src="{{ bio_image }}" alt="" /></span>
+                <h1 id="logo">Alex Wallar</h1>
+                <p>
+                    {{ position }}<br/>
+                    {{ blurb }}
+                </p>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#one" class="active">Bio</a></li>
+                    <li><a href="#two">Projects</a></li>
+                    <li><a href="#three">Publications</a></li>
+                    <li><a href="#four">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div id="wrapper">
+            <div id="main">
+                <section id="one">
+                    <div class="container">
+                        <header class="major">
+                            <h2>Bio</h2>
+                        </header>
+                        <p>{{ bio }}</p>
+                    </div>
+                </section>
+
+                <section id="two">
+                    <div class="container">
+                        <h2>Projects</h2>
+                        <div class="features">
+                            {% for proj in projects %}
+                            {{ proj }}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+
+                <section id="three">
+                    <div class="container"/>
+                        <h2>Publications</h2>
+                        <div class="features"/>
+                            <h3>Journals</h3>
+                            <ol>
+                                {% for pub in journals %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            <h3>Conferences</h3>
+                            <ol>
+                                {% for pub in conferences %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            <h3>Theses</h3>
+                            <ol>
+                                {% for pub in theses %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            {% if other %}
+                            <h3>Posters & Presentations</h3>
+                            <ol>
+                                {% for pub in other_pubs %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+
+                <section id="four">
+                    <div class="container">
+                        <h3>Contact</h3>
+                        <ul class="feature-icons">
+                            <li class="icon fa-github">
+                                <a href="http://github.com/wallarelvo">
+                                    @wallarelvo
+                                </a>
+                            </li>
+                            <li class="icon fa-envelope">
+                                wallar [at] mit [dot] edu
+                            </li>
+                            <li class="icon fa-book">
+                                <a href="https://scholar.google.com/citations?user=Q9r5Xy8AAAAJ&hl=en"/>
+                                    Google Scholar
+                                </a>
+                            </li>
+                                <li class="icon fa-linkedin">
+                                    <a href="https://uk.linkedin.com/in/wallarelvo"/>
+                                        LinkedIn
+                                    </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
