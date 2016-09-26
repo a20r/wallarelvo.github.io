@@ -1,0 +1,33 @@
+bio: >
+    Grew up around the world, now I live in Boston. I received a First Class Honours
+    degree in Computer Science from the University of St Andrews in 2015 where
+    I was accepted into the accelerated program allowing me to skip the first year.
+    Now I am a PhD student in the Distributed Robotics Laboratory at MIT under the
+    supervision of Daniela Rus.
+
+bio_image: imgs/me.jpg
+
+projects:
+    - title: Risk sensitive surveillance using unmanned aerial vehicles
+      links:
+        - link: /publications/WallarPlakuSofge.pdf
+          title: T-ASE
+        - link: /publications/SIS14-PARCov.pdf
+          title: SSCI 2014
+      image: imgs/avoid_risk_swarm.png
+
+    - title: Path planning for swarms in dynamic environments
+      links:
+        - link: /publications/SIS14-dCRoPS.pdf
+          title: SSCI 2014
+        - link: /publications/TAROS2013.pdf
+          title: TAROS 2013
+      image: imgs/dCRoPS.jpg
+
+    - title: >
+        Generating safe trajectories in dynamic environments by leveraging
+        information about obstacle motion
+      links:
+        - link: /publications/st-andrews-thesis.pdf
+          title: Undergraduate Thesis
+      image: imgs/dodger.png
