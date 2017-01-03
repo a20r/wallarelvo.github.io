@@ -12,7 +12,7 @@ blurb: Interested in autonomous systems and urban mobility
 projects:
     - title: On-demand high-capacity ride-sharing
       links:
-        - link: "#"
+        - link: http://www.pnas.org/content/early/2017/01/01/1611675114
           title: PNAS
           type: pub
         - link: http://motherboard.vice.com/read/3000-ubers-could-replace-nycs-entire-taxi-fleet
