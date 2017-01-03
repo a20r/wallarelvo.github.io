@@ -6,10 +6,16 @@
         </h4>
         <p>
             {{ title }} <br/>
-            <b>Publications:</b>
-            {% for pub_link, pub_title in pub_list %}
-            <a href="{{ pub_link }}">{{ pub_title }}</a>,
-            {% endfor %}
+            {% if pub_list %}
+            <b>Publications: </b>
+            {{ pub_list|join(", ") }}
+            {% endif %}
+            {% if news_list %}
+            <br/>
+            <b>News: </b>
+            {{ news_list|join(", ") }}
+            {% endif %}
+
         </p>
     </div>
 </article>

@@ -1,10 +1,7 @@
 bio: >
-    I received a First Class Honours
-    degree in Computer Science from the University of St Andrews in 2015 where
-    I was accepted into the accelerated program allowing me to skip the first year.
-    Now I am a PhD student in the Distributed Robotics Laboratory at MIT under the
-    supervision of Daniela Rus. I am currently working on ridesharing algorithms and
-    machine learning for future urban mobility.
+    I'm a PhD student at MIT doing research on ridesharing algorithms
+    and urban mobility. I am part of the Distributed Robotics Lab at CSAIL.
+    I graduated from the University of St Andrews in 2015.
 
 bio_image: imgs/me.jpg
 
@@ -13,12 +10,55 @@ position: PhD Student at MIT
 blurb: Interested in autonomous systems and urban mobility
 
 projects:
+    - title: On-demand high-capacity ride-sharing
+      links:
+        - link: "#"
+          title: PNAS
+          type: pub
+        - link: http://motherboard.vice.com/read/3000-ubers-could-replace-nycs-entire-taxi-fleet
+          title: VICE Magazine
+          type: news
+        - link: http://money.cnn.com/2017/01/02/technology/mit-taxis-new-york/index.html
+          title: CNN
+          type: news
+        - link: http://www.bbc.co.uk/news/technology-38496175
+          title: BBC
+          type: news
+        - link: http://fortune.com/2017/01/03/uber-lyft-carpooling/
+          title: Fortune
+          type: news
+        - link: http://europe.newsweek.com/uber-new-york-traffic-taxi-mit-study-537925
+          title: Newsweek
+          type: news
+        - link: http://www.theverge.com/2017/1/2/14147286/mit-research-nyc-taxi-carpool-uber-lyft
+          title: The Verge
+          type: news
+        - link: https://www.ft.com/content/b56b44a6-ceab-11e6-864f-20dcb35cede2
+          title: Financial Times
+          type: news
+        - link: http://gizmodo.com/rideshare-carpooling-could-completely-eliminate-the-nee-1790623953
+          title: Gizmodo
+          type: news
+        - link: http://www.popularmechanics.com/cars/technology/a24567/mit-taxi-algorithm/
+          title: Popular Mechanics
+          type: news
+        - link: https://www.washingtonpost.com/news/dr-gridlock/wp/2017/01/02/study-3000-ubers-could-replace-new-york-citys-taxi-fleet-if-youre-willing-to-share/?utm_term=.6708692876b8
+          title: Washington Post
+          type: news
+        - link: https://www.washingtonpost.com/news/dr-gridlock/wp/2017/01/02/study-3000-ubers-could-replace-new-york-citys-taxi-fleet-if-youre-willing-to-share/?utm_term=.0028098455e6
+          title: Engadget
+          type: news
+      image: imgs/mod.png
+      name: MoD
+
     - title: Risk sensitive surveillance using unmanned aerial vehicles
       links:
         - link: /publications/WallarPlakuSofge.pdf
           title: T-ASE
+          type: pub
         - link: /publications/SIS14-PARCov.pdf
           title: SSCI 2014
+          type: pub
       image: imgs/avoid_risk_swarm.png
       name: Rover
 
@@ -26,16 +66,18 @@ projects:
       links:
         - link: /publications/SIS14-dCRoPS.pdf
           title: SSCI 2014
+          type: pub
         - link: /publications/TAROS2013.pdf
           title: TAROS 2013
+          type: pub
       image: imgs/dCRoPS.jpg
       name: dCRoPS
 
-    - title: >
-        Generating safe trajectories in dynamic environments by leveraging
-        information about obstacle motion
-      links:
-        - link: /publications/st-andrews-thesis.pdf
-          title: Undergraduate Thesis
-      image: imgs/dodger.png
-      name: Dodger
+    # - title: >
+    #     Generating safe trajectories in dynamic environments by leveraging
+    #     information about obstacle motion
+    #   links:
+    #     - link: /publications/st-andrews-thesis.pdf
+    #       title: Undergraduate Thesis
+    #   image: imgs/dodger.png
+    #   name: Dodger

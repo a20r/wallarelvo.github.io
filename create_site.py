@@ -37,20 +37,45 @@ def create_site():
         theses=theses)
 
 
+def make_link(title, link):
+    return '<a href="{}">{}</a>'.format(link, title)
+
+
 def create_projects(projs):
     template = env.get_template("project.html")
     proj_htmls = list()
     for proj in projs:
         pub_list = list()
+        news_list = list()
         title = proj["title"]
         image = proj["image"]
         name = proj["name"]
         for link in proj["links"]:
-            pub_list.append((link["link"], link["title"]))
+            link_str = make_link(link["title"], link["link"])
+            if link["type"] == "pub":
+                pub_list.append(link_str)
+            elif link["type"] == "news":
+                news_list.append(link_str)
         html = template.render(
-            pub_list=pub_list, title=title, image=image, name=name)
+            news_list=news_list, pub_list=pub_list, title=title, image=image,
+            name=name)
         proj_htmls.append(html)
     return proj_htmls
+
+
+def format_authors(authors):
+    names = authors.split(" and ")
+    formatted_names = list()
+    for name in names:
+        last, first = name.split(", ")
+        first_initial = first[0]
+        formatted_names.append("{}. {}".format(first_initial, last))
+    if len(formatted_names) == 1:
+        return formatted_names[0]
+    elif len(formatted_names) == 2:
+        return " and ".join(formatted_names)
+    else:
+        return ", ".join(formatted_names[:-1]) + ", and " + formatted_names[-1]
 
 
 def create_pubs(bib_fname):
@@ -59,7 +84,7 @@ def create_pubs(bib_fname):
     with open(bib_fname) as f:
         bib = bibtexparser.loads(f.read())
     for entry in bib.entries:
-        authors = entry["author"]
+        authors = format_authors(entry["author"])
         year = entry["year"]
         title = entry["title"]
         for ven in ["booktitle", "journal", "school"]:
