@@ -5,15 +5,20 @@
             {{ name }}
         </h4>
         <p>
-            {{ title }} <br/>
+            <!-- {{ title }} <br/> -->
             {% if pub_list %}
-            <b>Publications: </b>
+            Publications:
             {{ pub_list|join(", ") }}
             {% endif %}
             {% if news_list %}
             <br/>
-            <b>News: </b>
+            News:
             {{ news_list|join(", ") }}
+            {% endif %}
+            {% if video_list %}
+            <br/>
+            Videos:
+            {{ video_list|join(", ") }}
             {% endif %}
 
         </p>

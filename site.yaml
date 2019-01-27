@@ -1,19 +1,20 @@
 bio: >
-    I'm a PhD student at MIT doing research on ridesharing algorithms
-    and urban mobility. I am part of the Distributed Robotics Lab at CSAIL.
-    I graduated from the University of St Andrews in 2015.
+    Alex Wallar is a PhD student in the Computer Science and Artificial Intelligence Lab at MIT. His research focusses on optimizing vehicle distributions and fleet sizes for ride-sharing systems to maximize system performance. He is a recipient of the Lemelson Presidential Fellowship, the MIT Diversity Fellowship, and the Shell-MIT Energy Fellowship. He received his masters degree in electrical engineering and computer science from MIT in 2017 with a focus on applications of constrained optimization for mobility-on-demand systems. He received is bachelors degree in computer science from the University of St Andrews in 2015 with first class honours.
 
-bio_image: imgs/me.jpg
+bio_image: imgs/me-new.jpg
 
 position: PhD Student at MIT
 
 blurb: Interested in autonomous systems and urban mobility
 
 projects:
-    - title: On-demand high-capacity ride-sharing
+    - name: On-demand high-capacity ride-sharing
       links:
         - link: http://www.pnas.org/content/early/2017/01/01/1611675114
           title: PNAS
+          type: pub
+        - link: http://alonsomora.com/docs/18-wallar-iros.pdf
+          title: IROS 2018
           type: pub
         - link: http://motherboard.vice.com/read/3000-ubers-could-replace-nycs-entire-taxi-fleet
           title: VICE Magazine
@@ -49,20 +50,35 @@ projects:
           title: Engadget
           type: news
       image: imgs/mod.png
-      name: MoD
 
-    - title: Risk sensitive surveillance using unmanned aerial vehicles
+    - name: Multi-class fleet sizing for mobility-on-demand
+      links:
+        - link: /publications/wallar-icra-fleet-2019.pdf
+          title: ICRA 2019
+          type: pub
+      image: imgs/fleet-sizing.png
+
+    - name: Remote sensing for autonomous vehicles with UAVs
+      links:
+        - link: /publications/17-wallar-FSR.pdf
+          title: FSR 2017
+          type: pub
+        - link: https://www.youtube.com/watch?v=IRhWPcHZmuU
+          title: Demo
+          type: video
+      image: imgs/foresight.jpg
+
+    - name: Risk sensitive surveillance using unmanned aerial vehicles
       links:
         - link: /publications/WallarPlakuSofge.pdf
-          title: T-ASE
+          title: T-ASE 2015
           type: pub
         - link: /publications/SIS14-PARCov.pdf
           title: SSCI 2014
           type: pub
       image: imgs/avoid_risk_swarm.png
-      name: Rover
 
-    - title: Path planning for swarms in dynamic environments
+    - name: Path planning for swarms in dynamic environments
       links:
         - link: /publications/SIS14-dCRoPS.pdf
           title: SSCI 2014
@@ -71,7 +87,6 @@ projects:
           title: TAROS 2013
           type: pub
       image: imgs/dCRoPS.jpg
-      name: dCRoPS
 
     # - title: >
     #     Generating safe trajectories in dynamic environments by leveraging

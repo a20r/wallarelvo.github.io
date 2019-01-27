@@ -47,7 +47,7 @@ def create_projects(projs):
     for proj in projs:
         pub_list = list()
         news_list = list()
-        title = proj["title"]
+        video_list = list()
         image = proj["image"]
         name = proj["name"]
         for link in proj["links"]:
@@ -56,9 +56,11 @@ def create_projects(projs):
                 pub_list.append(link_str)
             elif link["type"] == "news":
                 news_list.append(link_str)
+            elif link["type"] == "video":
+                video_list.append(link_str)
         html = template.render(
-            news_list=news_list, pub_list=pub_list, title=title, image=image,
-            name=name)
+            news_list=news_list, pub_list=pub_list, video_list=video_list,
+            image=image, name=name)
         proj_htmls.append(html)
     return proj_htmls
 
